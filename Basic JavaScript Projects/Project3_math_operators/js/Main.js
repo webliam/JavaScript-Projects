@@ -19,24 +19,6 @@ function getRndInteger(min, max) {
   }
 
 
-  var value = Math.random( );
-  document.write("Random Number Is : " + value ); 
-  value++;
-  document.write("<br />Random Number + 1 : " + value ); 
-
-  value=value-1;
-value--;
-  document.write("<br />Second Test Value : " + value ); 
-  
-  var value = Math.random( );
-  document.write("<br />Third Test Value : " + value ); 
-  
-  var value = Math.random( );
-  document.write("<br />Fourth Test Value : " + value ); 
-
-
-
-
 function myFunction() {
     var hour = new Date().getHours(); 
     var greeting;
