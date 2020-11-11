@@ -1,66 +1,29 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Assignment #2 For Mahnaz</title>
+        <title>Project4_dictionaries For Mahnaz</title>
 <script src="js/Main.js">
 </script>
     </head>
 <body>
-    <h2>First </h2>
+    <h2>Dictionary </h2>
     <p>
         <ul>
-            <li>
-                color="black"
-            </li>
-            <li>
-                 age="4"
-            </li>
-            <li>
-                  sound="bark!",
-            </li>
-        </ul>
-    </p>
-    <button id="dictionary" onclick="my_dictionary()">Click Me!</button>
-    <br>
-    <h2>Secend </h2>
-    <p>
-        <ul>
-            <li>Sara: "10"</li>
-            <li>sonia: "20"</li>
-            <li>sam: "3.5"</li>
+            <li>Make</li>
+            <li>Model</li>
+            <li>Year</li>
+            <li>Color</li>
+
         </ul>
 
     </p>
-    <p id="demo"></p>
-    <button onClick="fun()"> 
-        Add new Key-Value Pairs 
+
+
+    <button  onclick="My_Function()">
+        Click Me!
     </button>
-    <script>
-        function fun() { 
-    var dict = { 
-        Sara: "10", 
-        Sonia: "20", 
-        Sam: "3.5", 
-    }; 
-
-    dict.new_name = "new_value"; 
-    dict["another_new_name"] =  
-    "another_value"; 
-
-    var to_show = "var dict = { <br>"; 
-
-    for (var key in dict) { 
-        to_show += '"' + key + '" : '  
-        + dict[key] + "<br>"; 
-    } 
-
-    to_show += " }; <br>"; 
-
-    document.getElementById("demo") 
-    .innerHTML = to_show; 
-} 
-
-    </script>
+    <p id="Concatenate"></p>
+    <p id="Concatenate1"></p>
 
 </body>
 </html>
