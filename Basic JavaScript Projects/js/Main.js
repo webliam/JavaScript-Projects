@@ -1,5 +1,5 @@
 
-function Vehicle(Make, Model, Year, Color) {
+function Vehicle(Make, Model, Year, Color) { //defining  a function dictionary 
     this.Vehicle_Make=Make;
     this.Vehicle_Model=Model;
     this.Vehicle_Year=Year;
@@ -8,7 +8,7 @@ function Vehicle(Make, Model, Year, Color) {
 var Jack=new Vehicle("Dodge","Viper", 2020, "Red");
 var Erik=new Vehicle("Jeep","Car", 2021, "Black");
 var Jan=new Vehicle("Dodge","Pinto", 2018, "White");
-function My_Function() { //defining  a function name 
+function My_Function() { 
     document.getElementById("Concatenate").innerHTML="Erik Drive a "+ Erik.Vehicle_Color +" " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;//display the results of the constructor function within an HTML element
 }
 
@@ -21,7 +21,7 @@ function My_Function() { //defining  a function name
 
 
   
-  function hypotenuse(a, b) { //
+  function hypotenuse(a, b) { // defined Nested Function
     function square(x) { return x*x; }
     return Math.sqrt(square(a) + square(b));
  }
