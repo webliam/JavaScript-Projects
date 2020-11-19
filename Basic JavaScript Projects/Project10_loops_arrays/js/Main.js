@@ -30,14 +30,10 @@ function myFunction2() { //Click the button to return the value of the string ob
 
 
 
-
-function myFunction(value) {
-  text += "<li>" + value + "</li>";
-} 
 function cat(){
   var cat=[];
   cat[0]="Banana";
   cat[1]="Orange";
   cat[2]="apple";
-  document.getElementById("cat").innerHTML=cat[2];
+  document.getElementById("cat").innerHTML="Array[2] = "+cat[2];
 }
