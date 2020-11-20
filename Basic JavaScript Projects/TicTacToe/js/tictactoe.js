@@ -25,8 +25,10 @@ function placexoro(squarNumber) {
   }
   function computersTurn(){
     let success=false;
-    let pickASquare=String(Math.floor(Math.random()*9));
+    let pickASquare;
     while(!success){
+      pickASquare=String(Math.floor(Math.random()*9));
+
       if (placexoro(pickASquare)){
         placexoro(pickASquare);
         success=true;
