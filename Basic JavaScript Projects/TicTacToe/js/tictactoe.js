@@ -1,7 +1,7 @@
-let activeplayer="x";
+let activeplayer='x';
 let selectedSquares=[];
-function placexoro(squarNumber){
-  if (!selectedSquares.some(Element=>Element.includes(squarNumber)));{
+function placexoro(squarNumber) {
+  if (!selectedSquares.some(element=>element.includes(squarNumber))){
     let select=document.getElementById(squarNumber);
     if (activeplayer==='x'){
       select.style.backgroundImage ='url("images/X.png")';
@@ -16,7 +16,7 @@ function placexoro(squarNumber){
     } else {
       activeplayer ='x';
     }
-    audio("./media/place.mp3");
+    audio('./media/place.mp3');
     if (activeplayer==='o'){
       disableclick();
       setTimeout(function (){ computersTurn();} ,1000);
@@ -30,7 +30,7 @@ function placexoro(squarNumber){
       if (placexoro(pickASquare)){
         placexoro(pickASquare);
         success=true;
-      }
+      };
     }
 
   }
@@ -64,8 +64,8 @@ function checkWincondition(){
 
 }
 function disableclick(){
-  body.style.pointerEvents="none";
-  setTimeout(function(){body.style.pointerEvents="audio";}, 1000);
+  body.style.pointerEvents='none';
+  setTimeout(function(){ body.style.pointerEvents='auto';}, 1000);
 }
 function audio(audioURL){
   let audio= new Audio(audioURL);
