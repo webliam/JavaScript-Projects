@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>One-Page Website For Mahnaz</title>
+<link rel="stylesheet" type="text/css" href="one_page_website.css">
+<script src="js/one_page_website.js" ></script>
+
+</head>
+<body>
+<!--Nav-->
+<div class="wrap" >
+    <div class="menu-container">
+        <ul class="menu">
+            <a href="#home" id="link"><li>Home</li></a>
+            <a href="#gallery" ><li>Gallery</li></a>
+            <a href="#contact" ><li>Reservation</li></a>
+        </ul>
+    </div>
+</div>
+<!--end nav-->
+<!--Home-->
+<div id="Home">
+
+</div>
+<!--Home-->
+<!--Gallery-->
+<section>
+    <h2>Gallery</h2>
+
+<!--gallery-->
+<!-- Images used to open the lightbox -->
+<div class="row flex-container" id="gallery">
+    <div class="column photo-container">
+        <img src="img/solar (1).jpg" onclick="openModal();currentSlide(1)">
+        <div class="photo-overlay">
+            <h3>Click to enlarge</h3>
+            <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
+        </div>
+    </div>
+    <div class="column photo-container">
+        <img src="img/solar (2).jpg" onclick="openModal();currentSlide(2)">
+        <div class="photo-overlay">
+            <h3>Click to enlarge</h3>
+            <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
+        </div>
+    </div>
+    <div class="column photo-container">
+        <img src="img/solar (3).jpg" onclick="openModal();currentSlide(3)">
+        <div class="photo-overlay">
+            <h3>Click to enlarge</h3>
+            <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
+        </div>
+    </div>
+    <div class="column photo-container">
+        <img src="img/solar (4).jpg" onclick="openModal();currentSlide(4)">
+        <div class="photo-overlay">
+            <h3>Click to enlarge</h3>
+            <p>Lorem Ipsum is <i>simply dummy text </i>of the printing </p>
+        </div>
+    </div>
+  </div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/solar (1).jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/solar (2).jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/solar (3).jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/solar (4).jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column photo-cont">
+        <img src="img/solar (1).jpg" onclick="currentSlide(1)">
+    </div>
+  
+      <div class="column photo-cont">
+        <img src="img/solar (2).jpg" onclick="currentSlide(2)">
+      </div>
+  
+      <div class="column photo-cont">
+        <img src="img/solar (3).jpg" onclick="currentSlide(3)">
+      </div>
+  
+      <div class="column photo-cont">
+        <img src="img/solar (4).jpg" onclick="currentSlide(4)">
+      </div>
+    </div>
+  </div>
+
+</section> 
+
+
+<footer>
+    <h6>copyright 2020</h6>
+</footer>
+</html>
