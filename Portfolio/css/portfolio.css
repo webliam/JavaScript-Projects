@@ -438,11 +438,11 @@ html {
     border-style: solid;
     border-color: black;
   }	
-  span{
-    text-align: center;
-  }
+  
   /* Footer element */
   footer {
       padding: 2%;
       background-color:white;
   }
+  /* ------- */
+  
