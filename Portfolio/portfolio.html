@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>Your name here </title>
 	  <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+	  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -76,19 +77,19 @@
 
         <div class="mySlides fade">
           <div class="Slide_Number">3 / 6</div>
-            <img class="Slide_Show_Images" src="images/STp 123portland Mockup.jpg" style="width:100%">
+            <img class="Slide_Show_Images" src="Images/STp 123portland Mockup.jpg" style="width:100%">
               <div class="text">the popular programming language Wordpress,</div>
         </div>
 
         <div class="mySlides fade">
           <div class="Slide_Number">4 / 6</div>
-            <img class="Slide_Show_Images" src="images/STp Homemaple Mockup.jpg" style="width:100%">
+            <img class="Slide_Show_Images" src="Images/STp Homemaple Mockup.jpg" style="width:100%">
               <div class="text">PHP, wordpress, MVC,</div>
         </div>
 
 		<div class="mySlides fade">
 	      <div class="Slide_Number">5 / 6</div>
-			<img class="Slide_Show_Images" src="images/STp Pharma Mockup.jpg" style="width:100%">
+			<img class="Slide_Show_Images" src="Images/STp Pharma Mockup.jpg" style="width:100%">
               <div class="text">back end development, databases and SQL.</div>
 			</div>
 
@@ -104,7 +105,7 @@
 		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
 		
 	  </div>
-  <br>
+  		<br>
 
       <div style="text-align:center">
  
@@ -134,7 +135,7 @@
 	</div>
     
   </div>
-  <section class="content-section bg-light back" >
+  <section class=" back" >
     <div class="container text-center">
       <div class="row portfolio-item">
         <div class="col-lg-10 mx-auto">
@@ -142,14 +143,38 @@
           <p class="lead mb-5">
             I specialize in front-end development, and I mostly focus on simplicity, ergonomics, responsive design, cross-browser compatibility and SEO-friendly code. I am currently working as a freelancer in Canada, ON.
 			<a href="https://webliam.ca/">MY Website</a>!</p>
-			<button><a >What We Offer</a></button>
+			<br>
+			<a class="btn btn-xl" href="#service">What We Offer</a>
+
         </div>
       </div>
     </div>
   </section>
 
-<!-- portfolio section -->
+<!-- Service section -->
+	<div class="Row" id="service">
+		<h2>SERVICES</h2>
+			<h3>What We Offer</h3>
+		<div class="service"> <!-- Left column -->
 
+			<i class='fas fa-code' style='font-size:36px'></i>	
+			<h3>C# and SQL</h3>
+
+	
+		</div>
+		<div class="service"> <!-- Left column -->
+
+			<i class='fas fa-code' style='font-size:36px'></i>	
+			<h3>CRM</h3>
+		</div>
+		<div class="service"> <!-- Left column -->
+
+			<i class='fas fa-code' style='font-size:36px'></i>	
+			<h3>HTML, CSS and BootStrap</h3>
+		</div>
+		
+
+	</div>
 
 <!-- GitHub section -->
 	<div class="Row" id="GitHub">
@@ -163,13 +188,12 @@
 			<a href="https://github.com/webliam" target="_blank"><img src="Images/GitHub.png" alt="GitHub"></a>
 		</div>
 	</div>
-</div>
 
 <!-- Contact section -->
   <div id="Contact"> 
     <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
 	  <div class="form-popup" id="myForm">
-	    <form action="info@webliam.ca" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+	    <form action="portfolio.html" onsubmit="myFunction()" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
 		<h1>Contact</h1>
 			<label for="name"><b>Name</b></label>
 			  <input type="text" placeholder="Type your name here" name="name" required>
@@ -190,9 +214,9 @@
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
-		<a href="#" class="fa fa-facebook"></a>
-		<a href="#" class="fa fa-twitter"></a>
-		<a href="#" class="fa fa-instagram"></a>
+		<a href="https://www.facebook.com/webliamca" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/webliamca" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/webliamca/" class="fa fa-instagram"></a>
 		<a href="#" class="fa fa-youtube"></a>
 	  <p class="text-muted small mb-0">Copyright &copy; webliam 2020</p>
     </div>
